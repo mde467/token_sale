@@ -1,0 +1,23 @@
+{
+    "name": "DappTokenSale",
+    "version": "1.0.0",
+    "descriptiopn": "Dapp Token Sale ICO",
+    "main": "truffle.js",
+    "directories": {
+        "test": "test"
+    },
+    "scripts": {
+        "dev": "lite-server"
+    },
+    "authlor": "Mrudula",
+    "license": "ISC",
+    "devDependencies": {
+        "lite-server": "^2.3.0"
+    },
+    "dependencies": {
+        "@truffle/contract": "^4.2.26",
+        "bootstrap": "^4.5.3",
+        "jquery": "^3.5.1",
+        "web3": "^1.3.0"
+    }
+}
