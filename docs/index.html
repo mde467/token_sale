@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+        <meta name="viewport" content = "width=device-width, initial-scale=1">
+        <title>Dapp Token ICO Sale</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <script src="js/jquery.min.js" type= "text/javascript"></script>
+        <script src="js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="js/web3.min.js" type="text/javascript"></script>
+        <script src="js/truffle-contract.min.js" type="text/javascript"></script>
+        <script src="js/app.js" type="text/javascript"></script>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h1 class="text-center">DAPP TOKEN ICO SALE</h1>
+                    <hr/>
+                    <br/>
+                </div>
+            </div>
+            <div id="loader">
+                <p class="text-center">
+                    Loading...
+                </p>
+            </div>
+            <div id="content" class="text-center">
+                <p>
+                    Introducing "DAPP TOKEN" (DAPP)!
+                    Token Price is <span class="token-price"></span> Enter. You currently have <span class="dapp-balance"></span>&nbsp;DAPP.
+                </p>
+                <br/>
+                <form onSubmit="App.buyTokens(); return false;">
+                    <div class="input-group">
+                      <input type="number" class="form-control input-lg" id="numberOfToken" name="number" value="1" min="1" pattern="[0-9]"></input>
+                      <div class="input-group-append">
+                          <button type="submit" class="btn btn-primary ">Buy Tokens</button>
+                      </div>
+                    </div>
+                    </form>
+                    <br/>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p><span id="tokensold"></span>/<span id="tokensAvailable"></span> token sold</p>
+                    <hr>
+                    <div id="accountAddress">
+                    </div>
+            </div>
+        
+          </div>
+    </body>
+</html> 
+</html>
