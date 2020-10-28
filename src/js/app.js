@@ -70,13 +70,13 @@ const App ={
        // App.loading
         var loader = $("#loader");
         var content = $("#content");
+        let dappTokenSaleInstance = null;
+        let dappTokenInstance = null;
         web3.eth.getCoinbase((err, acct)=>{
             App.account = acct;
             console.log(App.account)
             $("#accountAddress").html("Your Account: " + App.account);
             console.log(App.account);
-            let dappTokenSaleInstance = null;
-            let dappTokenInstance = null;
             App.contracts.DappTokenSale.deployed().then(function(instance){
             dappTokenSaleInstance = instance;
             return dappTokenSaleInstance.tokenPrice();
